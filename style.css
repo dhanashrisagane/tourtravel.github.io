@@ -1,0 +1,22 @@
+.jumbotron{
+	    background-color:#0a7991;
+	    color:white;
+		padding:2rem 4rem;
+		display:flex;
+		flex-direction:row;
+	}
+	.jumbotron img{
+		width:500px;
+		padding-top: 100px;
+	}
+	.bg-custom{
+		background-color:#0a7991;
+	}
+	.nav-link .navbar-text{
+		color:white;
+	}
+	.form-inline{
+		padding-left:350px;
+	}
+	
+
