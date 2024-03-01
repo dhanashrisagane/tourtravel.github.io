@@ -1,22 +1,110 @@
 .jumbotron{
-	    background-color:#0a7991;
+	    padding-bottom: 60px;
+	    background-image:url("images/bg.jpg");
+	    background-size: cover
 	    color:white;
-		padding:2rem 4rem;
-		display:flex;
-		flex-direction:row;
+	    border-radius:none;
+		
+		
 	}
-	.jumbotron img{
-		width:500px;
-		padding-top: 100px;
+	.jumbotron h2{
+		text-align:center;
+		color:black;
+		
 	}
+	
 	.bg-custom{
-		background-color:#0a7991;
+		background-color:#76d6f5;
 	}
-	.nav-link .navbar-text{
-		color:white;
-	}
+	.nav-link{
+    		color:black;
+    	}
+    .nav-link:hover{
+    		font-weight:bold;
+    		font-color:white;
+
+    	}
+    .navbar-text a{
+    	color:black;
+    }
+    .dropdown-item{
+    		background-color:white;
+    	}
 	.form-inline{
-		padding-left:350px;
+		padding-left:550px;
 	}
+	#gallery img{
+		transition: transform 0.5s;
+	}
+	img:hover{
+		border:4px solid black;
+	}
+	figcaption{
+		color:black;
+		font-size: 30px;
+	}
+	.carousel-item span{
+		color:red;
+	}
+	}
+
+	#about p{
+		text-align:justify;
+		user-select:none; 
+		color:black;
+	}
+	#about.img-fluid{
+		width:600px;
+		height:700px;
+	}
+
+	figcaption{
+		text-align:center;
+	}
+	.slider img{
+		width:500px;
+	}
+	.footer-info {
+    padding: 25px 0 44px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    border-bottom: 1px solid
+    } 
+    ul li {
+    list-style: none;
+    }
+    footer .social-icons {
+    display: flex;
+    size:200px;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -22px;
+    }
+    #contact span{
+    	color:red;
+    }
+    #gallery span{
+    	color:red;
+    }
+    #about span{
+    	color:red;
+    }
+    #packages span{
+    	color:red;
+    }
+    #packages i{
+    	color:orange;
+    }
+    #Dest span{
+    	color:red;
+    }
+	
+
+
+
 	
 

@@ -8,53 +8,431 @@
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css" integrity="sha512-6lLUdeQ5uheMFbWm3CP271l14RsX1xtx+J5x2yeIDkkiBpeVTNhTqijME7GgRKKi6hCqovwCoBTlRBEC20M8Mg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 <link href="style.css" rel="stylesheet">
 
 </head>
 <body>
-	<nav class="navbar navbar-expand-lg bg-custom">
+  <!--Start navigation-->
+<nav class="navbar navbar-expand-lg bg-custom">
      <a class="navbar-brand" href="#">
     <img src="images\logo.jpg" alt="Logo" style="width:50px;">
      </a>
   <div class="collapse navbar-collapse" id="navbar">
     <ul class="navbar-nav mr-auto">
       <li class="nav-item">
-        <a class="nav-link" href="#">Home</a>
+        <a class="nav-link" href="#"><i class="bi bi-house-heart"></i>Home</a>
+      </li>
+      <li class="nav-item dropdown"><a href="#"class="nav-link dropdown-toggle" data-toggle="dropdown">Destinations</a>
+        <div class="dropdown-menu">
+           <a href="#"class="dropdown-item">Domestic</a>
+           <a href="#"class="dropdown-item">International</a>
+        </div>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">About</a>
+        <a class="nav-link" href="#gallery">Gallery</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Gallery</a>
+        <a class="nav-link" href="#packages">packages</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Contact us</a>
+        <a class="nav-link" href="#about">About</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#contact">Contact</a>
       </li>
     </ul>
     <span class="navbar-text">
-      <a href="#">Register</a> &nbsp;&nbsp;
-      <a href="#">Login</a>
+      <a href="#registermodal" data-toggle="modal">Register</a> &nbsp;&nbsp;
+      <a href="#loginmodal"data-toggle="modal">Login</a>
     </span>
   </div>
-  </nav>
+</nav>
+<!--end navigation-->
 
+<!--Start jumbotron-->
 <div class="jumbotron">
+  <div class="container-fluid">
   <div id="textd">
-  <marquee direction="Right" behaviour="alternate"><h1 class="display-4">WELCOME TO WORLD</h1></marquee>
+  <h2>Discover Your Next Adventure....</h2>
+  <br><br><br><br><br><br><br><br>
+  <marquee direction="Right" behaviour="alternate"><h2>Welcome The World</h2></marquee>
+  <br><br><br><br>
+  &nbsp;&nbsp;&nbsp;&nbsp;
   <form class="form-inline">
       <input class="form-control mr-sm-2" type="text" placeholder="Search">
-      <button class="btn btn-outline-primary my-2 my-sm-0" type="submit">Search</button>
+      <button class="form-control btn-primary my-2 my-sm-0" type="submit">Search</button>
   </form>
-  <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
-  <hr class="my-2">
-  <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
-  <p class="lead">
-    <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
-  </p>
-  </div>	
-     <div id="imgd">
-	     <img src="images\bg1.jpg" class="img-fluid">
-     </div>
+  
+  </div>
 </div>
+</div>
+<!--end jumbotron-->
+
+
+<!--start gallery--> 
+<div class="container" mx-auto id="gallery">
+  <h1 class="text-center my-3">Ga<span>lle</span>ry</h1>
+  <hr width="100px">
+<div class="row">
+  <div class="col-md-4"><img src="images\g1.png" class="img-fluid"></div>
+    <div class="col-md-4"><img src="images\g2.png" class="img-fluid"></div>
+      <div class="col-md-4"><img src="images\g3.png" class="img-fluid"></div>
+    </div>
+  </div>
+
+  <div class="container">
+    <hr width="100px">
+<div class="row">
+  <div class="col-md-4"><img src="images\g4.png" class="img-fluid"></div>
+    <div class="col-md-4"><img src="images\g5.png" class="img-fluid"></div>
+      <div class="col-md-4"><img src="images\g6.png" class="img-fluid"></div>
+    </div>
+  </div>
+<!--End gallery-->
+
+<!--start slider-->
+
+<div id="Dest">
+  <h1 class="text-center my-3">Dest<span>ina</span>tion</h1>
+  <hr width="100px">
+  <div id="demo" class="carousel slide" data-ride="carousel" data-interval="1000">
+  <div>
+    <ul class="carousel-indicators">
+      <li data-target="#demo" data-slide-to="0"></li>
+      <li data-target="#demo" data-slide-to="1"></li>
+      <li data-target="#demo" data-slide-to="2"></li>
+      <li data-target="#demo" data-slide-to="3"></li>
+      <li data-target="#demo" data-slide-to="4"></li>
+      <li data-target="#demo" data-slide-to="5"></li>
+      <li data-target="#demo" data-slide-to="6"></li>
+    </ul>
+  </div>
+<div class="carousel-inner">
+  <div class="carousel-item active">
+    <figure>
+    <img src="images/g1.png" width="100%" height="500px">
+    <figcaption><span>R</span>ajastan</figcaption>
+    </figure>
+  </div>
+  <div class="carousel-item">
+    <figure>
+    <img src="images/g2.png" width="100%" height="500px">
+    <figcaption><span>I</span>taly</figcaption>
+    </figure>
+  </div>
+  <div class="carousel-item">
+    <figure>
+    <img src="images/g3.png" width="100%" height="500px">
+    <figcaption><span>E</span>urop</figcaption>
+    </figure>
+  </div>
+  <div class="carousel-item">
+    <figure>
+    <img src="images/sigapour.jpg" width="100%" height="500px">
+    <figcaption><span>S</span>ingpour</figcaption>
+    </figure>
+  </div>
+  <div class="carousel-item">
+    <figure>
+    <img src="images/island.jpg" width="100%" height="500px">
+    <figcaption><span>I</span>sland</figcaption>
+    </figure>
+  </div>
+  <div class="carousel-item">
+    <figure>
+    <img src="images/france.jpg" width="100%" height="500px">
+    <figcaption><span>F</span>rance</figcaption>
+    </figure>
+  </div>
+  <div class="carousel-item">
+    <figure>
+    <img src="images/america.jpg" width="100%" height="500px">
+    <figcaption><span>A</span>merica</figcaption>
+    </figure>
+  </div>
+   <a class="carousel-control-prev" href="#demo" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#demo" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+</div>
+<!--End slider-->
+
+<!--Start About us-->
+<div class="container" id="about">
+  <h1 class="text-center my-3">Ab<span>out</span> us</h1>
+  <hr width="150px">
+  <div class="row">
+    <div class="col-md-6">
+      <img src="images\bg1.jpg" class="img-fluid">
+    </div>
+    <div class="col-md-6">
+      <p>Our Agency strongly believes and follows the concept of Kaizen i.e."change for the better”. It refers to the philosophy of continuous improvement of working practices to provide prompt and quality services with complete guest satisfaction. Being aware of travelers' ever-evolving needs, we always ensure to cater unique destination concepts, which have been acknowledged as innovations in the Indian Tourism Industry. So, if you are planning a trip- just let us know the details of your travel period, budget and desired destinations & we'll plan and organize for you the Most Memorable Holiday!</p>
+      <h3>Our Vision</h3>
+      <p>"Our Company, Spreading Smiles and Happiness..."</p>
+      <h3>Our Mission</h3>
+      <p>"Our Agency is passionately committed to Total Quality Travel, with continual delivery of value added services. We uphold the highest ethical standards and believe in creating new benchmarks in the industry."</p>
+    </div>
+  </div>
+</div>
+<!--End of about section-->
+
+
+
+<!--start packages-->
+<div class="container" id="packages">
+  <h1 class="text-center my-3">Pac<span>ka</span>ges</h1>
+  <hr width="300px">
+  <div class="row">
+    <div class="col-md-4">
+      <div class="card">
+        <div class="card-header"><h2><span>I</span>ndia</h2>
+          <div class="card-body"><img src="images\india.jpg" class="img-fluid">
+            <div class="card-footer"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i> <i class="bi bi-star"></i><i class="bi bi-star"></i>
+              <p>price:$1500</p>
+              <button class="btn btn-danger my-2 my-sm-0" type="submit">Book Now</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="card">
+        <div class="card-header"><h2><span>F</span>rance</h2>
+          <div class="card-body"><img src="images\france.jpg" class="img-fluid">
+            <div class="card-footer"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i> <i class="bi bi-star"></i><i class="bi bi-star"></i>
+              <p>price:$600</p>
+              <button class="btn btn-danger my-2 my-sm-0" type="submit">Book Now</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="card">
+        <div class="card-header"><h2><span>S</span>ingpour</h2>
+          <div class="card-body"><img src="images\sigapour.jpg" class="img-fluid">
+            <div class="card-footer"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i> <i class="bi bi-star"></i><i class="bi bi-star"></i>
+              <p>price:$50000</p>
+              <button class="btn btn-danger my-2 my-sm-0" type="submit">Book Now</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<hr width="100px">
+  <div class="row ">
+    <div class="col-md-4">
+      <div class="card">
+        <div class="card-header"><h2><span>A</span>merica</h2>
+          <div class="card-body"><img src="images\america.jpg" class="img-fluid">
+            <div class="card-footer"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i> <i class="bi bi-star"></i><i class="bi bi-star"></i>
+              <p>price:$1800</p>
+              <button class="btn btn-danger my-2 my-sm-0" type="submit">Book Now</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="card">
+        <div class="card-header"><h2><span>I</span>sland</h2>
+          <div class="card-body"><img src="images\island.jpg" class="img-fluid">
+            <div class="card-footer"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i> <i class="bi bi-star"></i><i class="bi bi-star"></i>
+              <p>price:$1200</p>
+              <button class="btn btn-danger my-2 my-sm-0" type="submit">Book Now</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="card">
+        <div class="card-header"><h2><span>E</span>urop</h2>
+          <div class="card-body"><img src="images\europ.jpg" class="img-fluid">
+            <div class="card-footer"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i> <i class="bi bi-star"></i><i class="bi bi-star"></i>
+              <p>price:$900</p>
+              <button class="btn btn-danger my-2 my-sm-0" type="submit">Book Now</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!--End packages-->
+
+<footer>
+<div class="container" id="contact">
+  <h1 class="text-center my-3"><span>C</span>ontac<span>t</span></h1>
+<hr width="150px">
+<div class="footer-info-content">
+    <ul class="footer-info">
+      <li>
+        <i class="bi bi-geo-alt-fill" style ="color:blue" aria-hidden="true"></i> Galli No.1, RadhaNagar,Panchavati,Amravati - 444601 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      </li>
+      <li>
+        <i class="bi bi-telephone-fill" style ="color:black"></i> 0721-234571&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      </li>
+      <br>
+      <li>
+      <i class="bi bi-whatsapp" style ="color:green"></i>9970057601 &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      </li>
+       <li>
+      <i class="bi bi-envelope" style ="color:orange"></i>info@tourmyworld.com &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+       </li> 
+      <br>
+      <li>
+        <i class="bi bi-phone-fill" style ="color:black"></i> +91-120-4056615 &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;
+      </li>
+      <li>
+        <i class="bi bi-skype" style ="color:#bf39bf"></i> tourmyworldamravati
+      </li>
+    </ul>
+    <div class=" container social_icons">
+            <div class="text-center">
+                <i class="bi bi-twitter" style ="color:blue"></i>
+                <i class="bi bi-instagram" style ="color:#bf39bf"></i>
+                <i class="bi bi-whatsappp" style ="color:green"></i>
+                <i class="bi bi-facebook" style ="color:blue"></i>
+                <i class="bi bi-youtube" style ="color:red"></i>
+            </div>
+    </div>
+  </div>
+</div>
+</footer>
+
+<!--start modal-->
+<!--Start register-->
+<div class="modal" tabindex="-1" role="dialog" id="registermodal">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Register</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+
+        <form>
+          <div class="form-group">
+    <label for="Inputfullname">Fullname</label>
+    <input type="text" class="form-control" id="exampleInputEmail" aria-describedby="emailHelp" placeholder="Enter Fullname">
+  </div>
+  <div class="form-group">
+    <label for="InputEmail1">Email address</label>
+    <input type="email" class="form-control" id="exampleInputEmail" aria-describedby="emailHelp" placeholder="Enter email">
+  </div>
+  <div class="form-group">
+    <label for="InputPassword1">Password</label>
+    <input type="password" class="form-control" id="exampleInputPassword" placeholder="Password">
+  </div>
+  <div class="form-group">
+    <label for="InputPassword1">Contact</label>
+    <input type="tel" class="form-control" id="exampleInputPassword" placeholder="contact">
+  </div>
+  <button type="button" class="btn btn-primary">Register</button>
+  <p>Already Have an Account. <a href="#loginmodal" data-toggle="modal" data-dismiss="modal">sign In</a></p>
+  </form>
+
+      </div>
+      <div class="modal-footer">
+               <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancle</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!--end register-->
+<!--Start login-->
+
+<div class="modal" tabindex="-1" role="dialog" id="loginmodal">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Login</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+
+        <form>
+  <div class="form-group">
+    <label for="InputEmail1">Email address</label>
+    <input type="email" class="form-control" id="exampleInputEmail" aria-describedby="emailHelp" placeholder="Enter email">
+  </div>
+  <div class="form-group">
+    <label for="InputPassword1">Password</label>
+    <input type="password" class="form-control" id="exampleInputPassword" placeholder="Password">
+  </div>
+  <button type="button" class="btn btn-primary">Login</button>
+  <p>Don't Have an Account. <a href="#registermodal" data-toggle="modal" data-dismiss="modal">sign up</a></p>
+  </form>
+
+      </div>
+      <div class="modal-footer">
+               <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!--end login-->
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/3.4.1/jquery-migrate.min.js" integrity="sha512-KgffulL3mxrOsDicgQWA11O6q6oKeWcV00VxgfJw4TcM8XRQT8Df9EsrYxDf7tpVpfl3qcYD96BpyPvA4d1FDQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js" integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<script>
+  $('.slider').slick({
+  dots: true,
+  infinite: false,
+  speed: 300,
+  slidesToShow: 3,
+  slidesToScroll: 1,
+  autoplay:true,
+  responsive: [
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 3,
+        infinite: true,
+        dots: true
+      }
+    },
+    {
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 2
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    }
+    // You can unslick at a given breakpoint now by adding:
+    // settings: "unslick"
+    // instead of a settings object
+  ]
+});
+  </script>
 </body>
 </html>
